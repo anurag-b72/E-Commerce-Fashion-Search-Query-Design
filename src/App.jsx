@@ -1,5 +1,6 @@
 import './App.css';
-import Search from './components/search/Search';
+import Product from './components/product/Product';
+// import Search from './components/search/Search';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
     //   </header>
     // </div>
     <>
-      <Search />
+      {/* <Search /> */}
+      <Product />
     </>
   );
 }

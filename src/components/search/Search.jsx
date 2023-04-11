@@ -8,16 +8,11 @@ const Search = () => {
 
   const searchEncoder = () => {
     const trends = [
-      [
         faker.commerce.productName(),
         faker.commerce.productName(),
         faker.commerce.productName(),
         faker.commerce.productName(),
-      ],
-      [
-        faker.image.fashion("320", "240", true),
-        faker.image.fashion("320", "240", true),
-      ],
+        // faker.image.fashion("320", "240", true),
     ];
     setSuggestions(trends);
     setShowSuggestions(true);
@@ -42,7 +37,7 @@ const Search = () => {
         <button>Search</button>
       </div>
       {/* <button onClick={handleClick}>Search</button> */}
-      {suggestions[0].length > 0 && (
+      {/* {suggestions.length > 0 && (
         <div className="search__container-suggestion-box">
           <h3>Latest Trends:</h3>
           <ul>
@@ -58,8 +53,8 @@ const Search = () => {
             ))}
           </ul>
         </div>
-      )}
-      {suggestions[1].length > 0 && (
+      )} */}
+      {suggestions.length > 0 && (
         <div className="search__container-suggestion-box">
           <h3>Popular Suggestions:</h3>
           <ul>

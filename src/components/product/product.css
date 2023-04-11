@@ -1,0 +1,33 @@
+.product__container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: rgb(177, 177, 177);
+    width: 100vw;
+    height: 100vh;
+}
+
+.product__container-search_bar {
+    border: 1px solid red;
+    height: 100px;
+    padding: 10px;
+}
+
+.product__container-result_output {
+    display: flex;
+    flex-direction: row;
+}
+
+.product__container-search_result {
+    background-color: cornflowerblue;
+    flex: 1;
+    /* width: 250px; */
+    padding-left: 20px;
+}
+
+.product__container-product_cards {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
