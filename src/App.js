@@ -1,6 +1,7 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
+import Search from './components/search/Search';
 import Product from './components/product/Product';
-// import Search from './components/search/Search';
 
 function App() {
   return (
@@ -21,8 +22,16 @@ function App() {
     //   </header>
     // </div>
     <>
-      {/* <Search /> */}
-      <Product />
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Search />} />
+          <Route path="/product" element={<Product />} />
+        </Routes>
+      </div>
+    </Router>
+      {/* <Search />
+      <Product /> */}
     </>
   );
 }

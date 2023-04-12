@@ -1,34 +1,70 @@
 .card__container {
-    background-color: bisque;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* margin: 0 20px; */
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 50%;
+  background-color: bisque;
+  /* width: 220px; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.card__container-image_wishlist {
+    z-index: 1;
+    position: relative;
+    top: 55px;
+    left: 170px;
 }
 
 .card__container-image img {
-    width: 50%;
-    height: 80%;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 0; */
+}
+
+.card__container-image_hover {
+    /* display: block; */
+    /* z-index: 1; */
+    background-color: rgba(156, 158, 244, 0.9);
+    color: #fff;
+    padding: 0 1rem;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 70px;
+
+    position: relative;
+    bottom: 56px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+div:hover .card__container-image_hover {
+    opacity: 1;
+}
+
+.card__container-title {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .card__container-price_crossed {
-    text-decoration: line-through;
-    margin-right: 10px;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.card__container-price_new {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(103, 105, 249);
 }
 
 .card__container-price_section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .card__container-review_section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }

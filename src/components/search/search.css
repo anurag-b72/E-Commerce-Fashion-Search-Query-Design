@@ -3,7 +3,9 @@
   display: flex;
   line-height: 28px;
   align-items: center;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  /* bottom: 250px; */
   /* max-width: 10000px; */
 }
 
@@ -41,18 +43,18 @@ input:hover {
   height: 1rem;
 }
 
-.search__container {
+/* .search__container { */
   /* display: flex;
     flex-direction: column; */
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); */
+/* } */
 
 .search__container-suggestion-box {
-  border: 1px solid black;
-  border-radius: 10px;
+  /* border: 1px solid black; */
+  /* border-radius: 10px; */
   padding: 1rem;
   margin-top: 1rem;
 }

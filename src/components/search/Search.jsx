@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { faker } from "@faker-js/faker";
 import "./search.css";
 
@@ -34,7 +35,7 @@ const Search = () => {
           onChange={searchEncoder}
           style={{ display: showSuggestions ? "block" : "none" }}
         />
-        <button>Search</button>
+        <button onClick={() => <Link to="/product">Search</Link>}>Search</button>
       </div>
       {/* <button onClick={handleClick}>Search</button> */}
       {/* {suggestions.length > 0 && (
