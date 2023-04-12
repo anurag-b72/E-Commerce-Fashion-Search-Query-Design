@@ -1,3 +1,20 @@
+# Steps to Open Project
+
+> 1. npm install  --save-dev @faker-js/faker
+> 1. npm install react-router-dom
+> 1. Default Home Page will open with "http://localhost:3000/" to search.
+> 1. You can view searched-product results throght "http://localhost:3000/product"
+
+
+
+### Search-Page
+![search-image](https://github.com/anurag-b72/E-Commerce-Fashion-Search-Query-Design/blob/main/src/assets/Screenshot-search.jpg)
+
+## Product-Page
+![product-image](https://github.com/anurag-b72/E-Commerce-Fashion-Search-Query-Design/blob/main/src/assets/Screenshot-product.jpg)
+
+-----------------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
